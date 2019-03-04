@@ -1,0 +1,6 @@
+import boto3
+
+#to list down the name of instances which were created
+ec2 = boto3.client('ec2')
+response = ec2.describe_instances()
+print(response)
