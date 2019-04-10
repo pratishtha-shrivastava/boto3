@@ -1,0 +1,5 @@
+import boto3
+s3 = boto3.resource("s3")
+obj = s3.Object("drsdkpewkp", "qwerty.txt")     #here we have to give the obejct_name or file_name which we want to delete along with respected bucket_name
+obj.delete()
+
